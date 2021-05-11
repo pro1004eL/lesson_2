@@ -1,13 +1,75 @@
-1. Что такое протокол HTTP/HTTPS
+https://tools.ietf.org/html/rfc2616#section-1
+
+
+1.	Что такое протокол HTTP/HTTPS
 HTTP протокол (HyperText Transfer Protocol «протокол передачи гипертекста») - это протокол прикладного уровня гипермедийных документов, таких как HTML. Протокол был разработан для связи между веб-браузерами и веб-серверами, но также используется и для других целей. HTTP протокол используется не только для передачи гипертекстовых документов, но и для передачи изображений и видео или для отправки контента на серверы. Также HTTP используется, чтобы получить часть документа для обновления веб-страницы по требованию.
 
-2. Какие есть коды ответов сервера. По 5 кодов из каждого пункта. (418 особенно)
+2.	Какие есть коды ответов сервера. По 5 кодов из каждого пункта. (418 особенно)
 
+https://developer.mozilla.org/ru/docs/Web/HTTP/Status
+
+Код ответа (состояния) HTTP показывает, был ли успешно выполнен определённый HTTP запрос. Коды сгруппированы в 5 классов:
+
+1.	Информационные 100 – 199
+	100 Continue
+	101 Switching Protocols
+
+2.	Успешные 200 - 299
+	200 OK
+	201 Created
+	202 Accepted
+	203 Non-Authoritative Information
+	204 No Content
+	205 Reset Content
+	206 Partial Content
+
+3.	Перенаправления 300 - 399 (Redirection)
+	300 Multiple Choices
+	301 Moved Permanently
+	302 Found
+	303 See Other
+	304 Not Modified
+	305 Use Proxy
+	306 (Unused)
+	307 Temporary Redirect
+
+4.	Клиентские ошибки 400 - 499 (Client Error)
+	400 Bad Request
+	401 Unauthorized
+	402 Payment Required
+	403 Forbidden
+	404 Not Found
+	405 Method Not Allowed
+	
+5.	Серверные ошибки 500 - 599 (Server Error)
+	500 Internal Server Error
+	501 Not Implemented
+	502 Bad Gateway
+	503 Service Unavailable
+	504 Gateway Timeout
+	505 HTTP Version Not Supported
+
+	https://tools.ietf.org/html/rfc2616#section-10
 
 3. Знать методы HTTP. Досконально. 
- - какие есть Header'ы
+	3.1 OPTIONS
+	3.2 GET
+	3.3 HEAD
+	3.4 POST
+	3.5 PUT
+	3.6 DELETE
 
+	https://tools.ietf.org/html/rfc2616#section-10
+
+ - какие есть Header'ы
+	13.5.1 End-to-end and Hop-by-hop Headers
+	13.5.2 Non-modifiable Headers
+	13.5.3 Combining Headers
+
+	https://tools.ietf.org/html/rfc2616#section-13.5.1
+			
  - где есть body где его нету
+	
 
  - какого размера может быть body
 
@@ -15,4 +77,5 @@ HTTP протокол (HyperText Transfer Protocol «протокол передачи гипертекста») - эт
 
  - какой из них идемпотентный, какой нет.
 
-4. Какие бывают клиент-серверные архитектуры и тд.
+4. Какие бывают клиент-серверные архитектуры и тд.	
+	
