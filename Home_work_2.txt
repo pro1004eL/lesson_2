@@ -45,12 +45,12 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"//Проверка статуса кода\r",
+							"//Checking the status of the code",
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"//В ответе указаны коэффициенты умножения weight, напишите тесты по проверке правильности результата перемножения на коэффициент\r",
+							"//The answer indicates the multiplication coefficients weight, write tests to check the correctness of the result of multiplication by the coefficient",
 							"pm.test(\"Food_and_sleep\", function () { \r",
 							"let weight = pm.variables.get(\"weight\");\r",
 							"var jsonData = pm.response.json();\r",
@@ -58,7 +58,7 @@
 							"pm.expect(jsonData.daily_food).to.eq(weight*0.012);\r",
 							"}); \r",
 							"\r",
-							"//Проверка структуры json в ответе\r",
+							"//Checking json structure in response",
 							"pm.test(\"Schema\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData).to.be.an(\"object\");\r",
